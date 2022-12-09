@@ -1,0 +1,124 @@
+import math as m
+def addition(a,b):
+    return a+b
+def substraction(a,b):
+    return a-b
+def multiplication(a,b):
+    return a*b
+def division(a,b):
+    return a/b
+def modulus(a,b):
+    return a%b
+def power(a,b):
+    return a**b
+def square_root(a):
+    return m.sqrt(a)
+def square(a):
+    return a*a
+def sin(a):
+    return m.sin(a)
+def cos(a):
+    return m.cos(a)
+def tan(a):
+    return m.tan(a)
+
+
+
+
+
+print('''
+1.Addition
+2.Substraction
+3.Multiplication
+4.Division
+5.Modulus
+6.Power
+7.Sqaure root
+8.Square
+9.Sin
+10.Cos
+11.Tan
+
+
+''')
+
+
+option = eval(input("What operation do you want to perform? "))
+
+
+
+
+while option <= 11:
+    if option ==1:
+        print('*Addition Operation*')
+        n1 = eval(input('Enter First Number:'))
+        n2 = eval(input('Enter Second Number:'))
+        result = addition(n1,n2)
+        print("The Addition of {} and {} is {}".format(n1,n2,result))
+    elif option ==2:
+        print('**Substraction Operation **')
+        n1 = eval(input('Enter First Number:'))
+        n2 = eval(input('Enter Second Number:'))
+        result = substraction(n1,n2)
+        print("The Substraction of {} and {} is {}".format(n1,n2,result))
+    elif option ==3:
+        print('**Multiplication Operation **')
+        n1 = eval(input('Enter First Number:'))
+        n2 = eval(input('Enter Second Number:'))
+        result = multiplication (n1,n2)
+        print("The Multiplication of {} and {} is {}".format(n1,n2,result))
+    elif option ==4:
+        print('**Division Operation **')
+        n1 = eval(input('Enter First Number:'))
+        n2 = eval(input('Enter Second Number:'))
+        result = division (n1,n2)
+        print("The Division of {} and {} is {}".format(n1,n2,result))
+    elif option ==5:
+        print('*Modulus Operation **')
+        n1 = eval(input('Enter First Number:'))
+        n2 = eval(input('Enter Second Number:'))
+        result = modulus (n1,n2)
+        print("The modulus of {} and {} is {}".format(n1,n2,result))
+    elif option ==6:
+        print('**Power Operation **')
+        n1 = eval(input('Enter First Number:'))
+        n2 = eval(input('Enter Second Number:'))
+        result = power(n1,n2)
+        print("The Power of {} and {} is {}".format(n1,n2,result))
+    elif option ==7:
+        print('** Square Root Operation **')
+        n1 = eval(input('Enter Any Number:'))
+        result =  square_root(n1)
+        print("The Square root of {} is {} " .format(n1,result))
+    elif option ==8:
+        print('**Square Operation **')
+        n1 = eval(input('Enter First Number:'))
+        result = square(n1)
+        print("The Square {} is {} ".format(n1,result))
+    elif option ==9:
+        print('**Sin Operation **')
+        n1 = eval(input('Enter First Number:'))
+        result = sin(n1)
+        print("The Sin value of {} is {}".format(n1, result))
+    elif option ==10:
+        print('**Cos Operation **')
+        n1 = eval(input('Enter First Number:'))
+        result = cos(n1)
+        print("The Cos Value of {} is {}".format(n1,result))
+    elif option ==11:
+        print('**Tan Operation **')
+        n1 = eval(input('Enter First Number:'))
+        result = tan(n1)
+        print("The Tan value of {} is {}".format(n1,result))
+
+    else:
+        print("Please Choose Operation")
+
+    print()
+    new_option = eval(input('Do You want to continue Other Operations (Yes-1 or No-0): '))
+    if new_option ==1:
+        option = eval(input("What operation do you want to perform? "))
+
+    else:
+        print("Thank You So Much.")
+        break
